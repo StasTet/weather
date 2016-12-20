@@ -31,7 +31,7 @@ $(document).ready(function(){
 
 	function ajaxFanc(){
 		$.ajax({
-			url: "http://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&units=metric&appid=862dc7cbbdc5915f4aa2bdec7b31dbdd",
+			url: "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&units=metric&appid=862dc7cbbdc5915f4aa2bdec7b31dbdd",
 			success:function(result){
 				console.log(result);
 				//<hr class="featurette-divider">
