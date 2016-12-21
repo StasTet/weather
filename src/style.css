@@ -1,6 +1,7 @@
 body {
     padding-bottom: 40px;
     background-color: #eeeeee;
+    font-family: 'Baloo Thambi', cursive;
 }
 
 .container {
@@ -24,7 +25,8 @@ select.form-control{
 	font-size: 30px;
 }
 
-#weather .temp img{
+#weather .temp img,
+#weather .wind img{
 	width: 35px;
 }
 
