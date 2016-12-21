@@ -36,6 +36,10 @@ select.form-control{
 	font-size: 30px;
 }
 
+#weather .image{
+	text-align: center;
+}
+
 .deleteImage{
 	width: 18px;
 }

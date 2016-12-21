@@ -3,21 +3,6 @@ $(document).ready(function(){
 	var cityName = '';
 	var urlWeather;
 
-
-	// cityName = $('.city').val($('select[name="city"] option:selected').text());
-	// $('#searchOne').click(function(){
-	// 	cityName = $('.city').val();
-	// 	if(cityName.length!=''){
-	// 		addCity();
-	// 	}
-	// 	ajaxFanc();
-	// });
-
-	// $('#searchTwo').click(function(){
-	// 	cityName = $('select[name="city"] option:selected').text();
-	// 	ajaxFanc();
-	// });
-
 	$('#search').click(function(){
 		cityName = $('.city').val();
 		addCity()
@@ -36,15 +21,13 @@ $(document).ready(function(){
 			//url: "http://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&units=metric&appid=862dc7cbbdc5915f4aa2bdec7b31dbdd",
 			success:function(result){
 				console.log(result);
-				//<hr class="featurette-divider">
 				$('#weather .cityName').html(result.city);
 				$('#weather .temp').html('<img src="src/image/temperature.png" class="img-circle">' + result.temp + '&deg;');
 				$('#weather .sky').html(result.currently);
-				//$('#weather .image').html('<img src="' + result.image + '" />');
-				$('#weather .wind').html(result.wind.speed + 'km/h');
+				$('#weather .image').html('<img src="' + result.image + '" />');
+				$('#weather .wind').html(result.wind.speed + ' km/h');
 			},
 			error:function(error){
-				//alert('City "' + cityName + '" does not exist');
 				console.log(error);
 			}
 			
@@ -65,29 +48,4 @@ $(document).ready(function(){
 		$('select[name="city"] option:selected').remove();
 	}
 
-	
-
-
-
 });
-
-
-
-// function initMap() {
-// 	var myLatLng = {lat: -25.363, lng: 131.044};
-
-// 	// Create a map object and specify the DOM element for display.
-// 	var map = new google.maps.Map($('#map'), {
-// 	  center: myLatLng,
-// 	  scrollwheel: false,
-// 	  zoom: 4
-// 	});
-
-// 	// Create a marker and set its position.
-// 	var marker = new google.maps.Marker({
-// 	  map: map,
-// 	  position: myLatLng,
-// 	  title: 'Hello World!'
-// 	});
-// }
-
