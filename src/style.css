@@ -1,0 +1,52 @@
+body {
+    padding-bottom: 40px;
+    background-color: #eeeeee;
+    font-family: 'Baloo Thambi', cursive;
+}
+
+.container {
+	text-align: center;
+}
+
+input.form-control,
+select.form-control{
+	width: 300px;
+	margin: 0 auto;
+}
+
+#weather{
+	margin: 20px 0;
+}
+
+#weather .cityName{
+	font-size: 45px;
+}
+
+#weather .country{
+	font-size: 20px;
+}
+
+#weather .temp{
+	font-size: 30px;
+}
+
+#weather .temp img,
+#weather .wind img{
+	width: 35px;
+}
+
+#weather .sky{
+	font-size: 30px;
+}
+
+#weather .wind{
+	font-size: 30px;
+}
+
+#weather .updated{
+	font-size: 18px;
+}
+
+.deleteImage{
+	width: 18px;
+}
