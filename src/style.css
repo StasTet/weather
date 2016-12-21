@@ -35,3 +35,7 @@ select.form-control{
 #weather .wind{
 	font-size: 30px;
 }
+
+.deleteImage{
+	width: 18px;
+}

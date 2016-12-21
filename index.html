@@ -11,6 +11,7 @@
 		<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
 
 		<script type="text/javascript" src="src/script.js"></script>
 		<link rel="stylesheet" type="text/css" href="src/bootstrap.css">
@@ -26,21 +27,24 @@
 				<h1>Weather</h1>
 				<input type="text" class="city form-control" placeholder="Search" value="Voronezh">
 
-				<p id="search" class="btn btn-default">Search</p>
+				
 
-				<select name="city" class="form-control">
+				<select name="city" class="form-control col-lg-4 col-md-4 col-xs-4">
 				    <option>Voronezh</option>
 				    <option>London</option>
 				    <option>New York</option>
 				    <option>Tokio</option>
 				</select>
 
-				<p id="del" class="btn btn-default">Delete</p>
+				<span id="del" class="btn btn-default"><img src="src/image/delete.png" class="deleteImage img-circle"/></span>
+				<br/>
+				<p id="search" class="btn btn-default">Search</p>
 
 				<div id="weather">
 					<p class="cityName"></p>
 					<p class="temp"></p>
 					<p class="sky"></p>
+					<p class="image"></p>
 					<p class="wind"></p>
 				</div>
 
