@@ -21,6 +21,10 @@ select.form-control{
 #weather .cityName{
 	font-size: 45px;
 }
+
+#weather .country{
+	font-size: 20px;
+}
 #weather .temp{
 	font-size: 30px;
 }
@@ -34,12 +38,16 @@ select.form-control{
 	font-size: 30px;
 }
 
+#weather .image{
+	text-align: center;
+}
+
 #weather .wind{
 	font-size: 30px;
 }
 
-#weather .image{
-	text-align: center;
+#weather .updated{
+	font-size: 18px;
 }
 
 .deleteImage{
