@@ -31,7 +31,6 @@ function ajaxFanc(cityName){
 			$('#weather .sky').html(result.weather[0].main);
 			$('#weather .wind').html(result.wind.speed + ' km/h');
 			$('#weather .wind').html('<img src="src/image/wind.png" class="img-circle">' + result.wind.speed + ' km/h');
-			$('#weather .updated').html(result.updated);
 		},
 		error:function(error){
 			console.log(error);
