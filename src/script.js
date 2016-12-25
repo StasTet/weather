@@ -1,7 +1,5 @@
 $(document).ready(function(){
 
-	var urlWeather;
-
 	$('#search').click(function(){
 		$('#error').html('');
 		cityName = $('.city').val();
@@ -9,6 +7,7 @@ $(document).ready(function(){
 		if(cityName.length == ''){
 			$('#error').html('Enter a city');
 		}
+		
 		ajaxFanc(cityName);
 	});
 
