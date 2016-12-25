@@ -1,5 +1,7 @@
 $(document).ready(function(){
 
+<<<<<<< HEAD
+	var cityName;
 	var urlWeather;
 
 	$('#search').click(function(){
@@ -32,6 +34,27 @@ function yaMap(x,y){
 function clearMap(){
 	$('#myMap').html('');
 }
+=======
+	var cityName = '';
+	var urlWeather;
+
+	$('#search').click(function(){
+		cityName = $('.city').val();
+		addCity(cityName)
+		ajaxFanc(cityName);
+	});
+
+	$('select[name="city"]').click(function(){
+		text = $('select[name="city"] option:selected').text();
+		$('.city').val(text);
+	});
+
+	$('#del').click(function(){
+		delCity();
+	});
+
+});
+>>>>>>> 1fa92a7b3f589eeb35d8e6767d9abdcd393b4ccf
 
 function ajaxFanc(cityName){
 	$.ajax({
@@ -44,14 +67,32 @@ function ajaxFanc(cityName){
 			$('#weather .sky').html(result.weather[0].main);
 			$('#weather .wind').html(result.wind.speed + ' km/h');
 			$('#weather .wind').html('<img src="src/image/wind.png" class="img-circle">' + result.wind.speed + ' km/h');
+<<<<<<< HEAD
 
 			clearMap();
 			yaMap(result.coord.lat, result.coord.lon);
+=======
+>>>>>>> 1fa92a7b3f589eeb35d8e6767d9abdcd393b4ccf
 		},
 		error:function(error){
 			console.log(error);
 		}
 		
 	});
+<<<<<<< HEAD
 
+=======
+}
+
+function addCity(cityName) {
+	var text = $('select[name="city"] option').text();
+	var count = text.indexOf(cityName);
+	if(count == -1){
+		$('select[name="city"]').append('<option>' + cityName + '</option>');
+	}
+}
+
+function delCity() {
+	$('select[name="city"] option:selected').remove();
+>>>>>>> 1fa92a7b3f589eeb35d8e6767d9abdcd393b4ccf
 }

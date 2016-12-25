@@ -11,43 +11,72 @@
 		<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<<<<<<< HEAD
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.simpleWeather/3.1.0/jquery.simpleWeather.min.js"></script>
 		<script src="https://api-maps.yandex.ru/2.0-stable/?load=package.full&lang=ru-RU" type="text/javascript"></script>
 
 		<script type="text/javascript" src="src/script.js"></script>
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+=======
+
+		<script type="text/javascript" src="src/script.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Baloo+Thambi" rel="stylesheet">
+>>>>>>> 1fa92a7b3f589eeb35d8e6767d9abdcd393b4ccf
 		<link rel="stylesheet" type="text/css" href="src/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="src/style.css">
 
 	</head>
+<<<<<<< HEAD
 
+=======
+	
+>>>>>>> 1fa92a7b3f589eeb35d8e6767d9abdcd393b4ccf
 	<body>
 		<div class = "container">
 			<div class="row">
 
 				<h1>Weather</h1>
+<<<<<<< HEAD
 				<input type="text" class="city form-control" placeholder="Voronezh" value="Voronezh">
 
 				<p id="search" class="btn btn-default">Search</p>
 				<p id="error"></p>
+=======
+				<input type="text" class="city form-control" placeholder="Search" value="Voronezh">
+
+				<select name="city" class="form-control">
+				    <option>Voronezh</option>
+				    <option>London</option>
+				    <option>New York</option>
+				    <option>Tokyo</option>
+				    <option>Dubai</option>
+				    <option>Yakutsk</option>
+				</select>
+
+				<p id="del" class="btn btn-default"><img src="src/image/delete.png" class="deleteImage img-circle"/></p>
+
+				<p id="search" class="btn btn-default">Search</p>
+>>>>>>> 1fa92a7b3f589eeb35d8e6767d9abdcd393b4ccf
 
 				<div id="weather">
 					<p class="cityName"></p>
 					<p class="country"></p>
 					<p class="temp"></p>
 					<p class="sky"></p>
+<<<<<<< HEAD
 					<p class="image"></p>
 					<p class="wind"></p>
 					<p class="updated"></p>
 				</div>
 
-				<div id="myMap"></div>
+				<div id="myMap" style="height: 400px"></div>
 
+=======
+					<p class="wind"></p>
+				</div>
+>>>>>>> 1fa92a7b3f589eeb35d8e6767d9abdcd393b4ccf
 			</div>
 		</div>
-	</body>
-
-</html>
 	</body>
 
 </html>
