@@ -1,7 +1,7 @@
 body {
     padding-bottom: 40px;
     background-color: #eeeeee;
-    font-family: 'Baloo Thambi', cursive;
+	font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -51,6 +51,6 @@ select.form-control{
 	font-size: 18px;
 }
 
-.deleteImage{
-	width: 18px;
+#error{
+	color: red;
 }
