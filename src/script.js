@@ -41,7 +41,6 @@ function ajaxFanc(cityName){
 			$('#weather .country').html(result.sys.country);
 			$('#weather .temp').html('<img src="src/image/temperature.png" class="img-circle">' + result.main.temp + '&deg;');
 			$('#weather .sky').html(result.weather[0].main);
-			$('#weather .wind').html(result.wind.speed + ' km/h');
 			$('#weather .wind').html('<img src="src/image/wind.png" class="img-circle">' + result.wind.speed + ' km/h');
 
 			clearMap();
